@@ -80,6 +80,7 @@ Setelah cache dari paket-paket yang terinstal dibersihkan, kita juga dapat mengh
 Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedia pada repositori yang baru dikarenakan paket-paket tersebut sudah usang. Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan ingatlah untuk memeriksa daftar paket yang akan dihapus.
 
 `sudo apt list ‘?obsolete’'
+
 'sudo apt remove ‘?obsolete’`
   
 ![Gambar 8.6.2-3](images/8.6.2-3.png)
@@ -87,6 +88,7 @@ Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedi
 Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus.
 
 `dpkg –list | awk ‘/^rc/ {print $2}’`
+
 `sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)`
   
 ![Gambar 8.6.2-4](images/8.6.2-4.png)
@@ -94,6 +96,7 @@ Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada 
 Kita dapat menginstal tool deborphan yang berisi daftar paket-paket yatim piatu (paket-paket yang tidak bergantung pada paket lain) pada sistem. Ingatlah untuk memeriksa dengan seksama daftar paket yang akan dihapus.
 
 `sudo apt install deborphan, echo $(deborphan)`
+
 `sudo apt autoremove –purge $(deborphan)`
   
 ![Gambar 8.6.2-5](images/8.6.2-5.png)

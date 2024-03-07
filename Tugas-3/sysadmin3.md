@@ -32,60 +32,69 @@ Meskipun hard disk semakin besar kapasitasnya, kita mungkin masih memerlukan rua
 Hal pertama yang harus dilakukan adalah mengetahui ruang yang digunakan oleh disk. Beberapa tools tersedia, dimulai dari terminal:
 #### a. Disk space in terminal mode
 Ringkasan penggunaan ruang disk untuk setiap pemsangan sistem (disk dan partisi) dengan perintah
-_df -h_
+
+`df -h`
   
 ![Gambar 8.6.1-1](images/8.6.1-1.png)
 
 #### b. List your repertories sorted by decreasing size
 Lihat direktori anda yang berukuran besar dengan perintah du dan sort (satuan yang digunakan adalah megabyte):
-_du -ms * | sort -nr_
+
+`du -ms * | sort -nr`
   
 ![Gambar 8.6.1-2](images/8.6.1-2.png)
 
 #### c. Ncdu
 Tools untuk melakukan analisis ruang disk dalam mode console. Gunakan perintah ncdu untuk menjalankan di terminal.
-_sudo apt update && sudo apt install ncdu_
+
+`sudo apt update && sudo apt install ncdu`
   
 ![Gambar 8.6.1-3](images/8.6.1-3.png)
 ![Gambar 8.6.1-4](images/8.6.1-4.png)
 
-**_Ncdu dijalankan di folder pribadi pengguna_**
+_Ncdu dijalankan di folder pribadi pengguna_
 
 #### d. Baobab
 Analisis ruang disk dalam mode grafis yang terintegrasi dengan Gnome, tetapi tersedia di environments lain.
-_sudo apt update && sudo apt install baobab_
+
+`sudo apt update && sudo apt install baobab`
   
 ![Gambar 8.6.1-5](images/8.6.1-5.png)
 ![Gambar 8.6.1.-6](images/8.6.1.-6.png)
 
-**_Baobab: Analisis ruang disk pada Gnome_**
+_Baobab: Analisis ruang disk pada Gnome_
 
 ### 2. Cleaning The Package
 **Apt/aptitude/dpkg** adalah pengelola paket Debian. Ketika menginstall sebuah paket, file **archive- source/deb**-nya akan disimpan pada sistem di folder **/var/cache/apt/arsip/** untuk memungkinkan penginstalan ulang tanpa koneksi internet.
-_sudo apt clean_
+
+`sudo apt clean`
   
 ![Gambar 8.6.2-1](images/8.6.2-1.png)
 
 Setelah cache dari paket-paket yang terinstal dibersihkan, kita juga dapat menghapus paket-paket yang tidak berguna dari sistem dan juga file-file konfigurasi. Ingatlah untuk memeriksa dengan teliti daftar paket yang akan dihapus sebelum dijalankan.
-_sudo apt autoremove –purge_
+
+`sudo apt autoremove –-purge`
   
 ![Gambar 8.6.2-2](images/8.6.2-2.png)
 
 Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedia pada repositori yang baru dikarenakan paket-paket tersebut sudah usang. Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan ingatlah untuk memeriksa daftar paket yang akan dihapus.
-_sudo apt list ‘?obsolete’
-sudo apt remove ‘?obsolete’_
+
+`sudo apt list ‘?obsolete’
+sudo apt remove ‘?obsolete’`
   
 ![Gambar 8.6.2-3](images/8.6.2-3.png)
 
 Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus.
-_dpkg –list | awk ‘/^rc/ {print $2}’
-sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)_
+
+`dpkg –list | awk ‘/^rc/ {print $2}’
+sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)`
   
 ![Gambar 8.6.2-4](images/8.6.2-4.png)
 
 Kita dapat menginstal tool deborphan yang berisi daftar paket-paket yatim piatu (paket-paket yang tidak bergantung pada paket lain) pada sistem. Ingatlah untuk memeriksa dengan seksama daftar paket yang akan dihapus.
-_sudo apt install deborphan, echo $(deborphan)
-sudo apt autoremove –purge $(deborphan)_
+
+`sudo apt install deborphan, echo $(deborphan)
+sudo apt autoremove –purge $(deborphan)`
   
 ![Gambar 8.6.2-5](images/8.6.2-5.png)
 
@@ -93,11 +102,13 @@ sudo apt autoremove –purge $(deborphan)_
 Tiga sampah yang berbeda dan harus dipertimbangkan:
 #### a. Sampah Pengguna:
 **~/.local/share/Trash/**. Kita dapat mengosongkannya dengan manajer file sistem atau terminal.
-_rm -Rf  ~/.local/share/Trash/*_
+
+`rm -Rf  ~/.local/share/Trash/*`
 
 #### b. Sampah Administrator:
 **/root/.local/share/Trash/**. Untuk mengosongkannya dengan cara yang benar, gunakan terminal dalam mode administrator.
-_rm -Rf /root/.local/share/Trash/*_
+
+`rm -Rf /root/.local/share/Trash/*`
 
 #### c. Sampah Eksternal:
 terletak di disk eksternal dan biasanya bernama **'/media/y- our_id/your_disk/.Trash_1000'**, di mana your_id sesuai dengan nama login.

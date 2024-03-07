@@ -79,22 +79,22 @@ Setelah cache dari paket-paket yang terinstal dibersihkan, kita juga dapat mengh
 
 Jika telah mengupgrade sistem, ada kemungkinan beberapa paket tidak lagi tersedia pada repositori yang baru dikarenakan paket-paket tersebut sudah usang. Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan ingatlah untuk memeriksa daftar paket yang akan dihapus.
 
-`sudo apt list ‘?obsolete’
-sudo apt remove ‘?obsolete’`
+`sudo apt list ‘?obsolete’'
+'sudo apt remove ‘?obsolete’`
   
 ![Gambar 8.6.2-3](images/8.6.2-3.png)
 
 Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus.
 
-`dpkg –list | awk ‘/^rc/ {print $2}’
-sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)`
+`dpkg –list | awk ‘/^rc/ {print $2}’`
+`sudo apt purge $(dpkg –list | awk ‘/^rc/ {print $2}’)`
   
 ![Gambar 8.6.2-4](images/8.6.2-4.png)
 
 Kita dapat menginstal tool deborphan yang berisi daftar paket-paket yatim piatu (paket-paket yang tidak bergantung pada paket lain) pada sistem. Ingatlah untuk memeriksa dengan seksama daftar paket yang akan dihapus.
 
-`sudo apt install deborphan, echo $(deborphan)
-sudo apt autoremove –purge $(deborphan)`
+`sudo apt install deborphan, echo $(deborphan)`
+`sudo apt autoremove –purge $(deborphan)`
   
 ![Gambar 8.6.2-5](images/8.6.2-5.png)
 
@@ -118,7 +118,8 @@ terletak di disk eksternal dan biasanya bernama **'/media/y- our_id/your_disk/.T
 
 ### 4. Purging Application Caches
 Beberapa aplikasi yang menggunakan folder cache untuk menyimpan gambar, video, dan berbagai informasi lainnya agar dapat berjalan lebih cepat. Biasanya data ini tidak menghabiskan terlalu banyak ruang disk, namun jika kita mendeteksi bahwa sebuah folder menjadi terlalu besar, jangan ragu untuk menghapusnya.
- _rm -Rf ~/.cache/*_
+
+`rm -Rf ~/.cache/*`
    
 ![Gambar 8.6.4](images/8.6.4.png)
 
@@ -126,7 +127,8 @@ Setiap aplikasi memiliki caranya sendiri untuk mengelola cache-nya. ada yang men
 
 ### 5. Purging The Thumbnails
 Setiap kali membuka folder yang berisi gambar atau video, thumbnail dibuat untuk mewakili file grafis ini. Thumbnail ini disimpan dalam folder tertentu untuk digunakan kembali, daripada dipaksa untuk menghitung ulang setiap kali Anda mengakses file semacam ini. Masalahnya akan muncul ketika menghapus file grafis, karena thumbnail-nya disimpan dalam sistem, dan ini menyebabkan sejumlah ruang disk terbuang untuk menyimpan thumbnail yang sudah tidak terpakai. Untuk menghapusnya, cukup dengan menghapus folder yang bersangkutan.
-_rm -Rf ~/.thumbnails_
+
+`rm -Rf ~/.thumbnails`
    
 ![Gambar 8.6.5](images/8.6.5.png)
 

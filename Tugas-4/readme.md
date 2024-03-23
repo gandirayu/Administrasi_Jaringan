@@ -16,6 +16,7 @@
 | Nomor | File                                 |
 |-------|--------------------------------------|
 | 1     | [Ekosistem Internet](ekosistemInternet.md)    |
+| 3     | [DNS Query](dnsquery.md) |
 | 2     | [Instalasi DNS Server](dns.md) |
 
 ---

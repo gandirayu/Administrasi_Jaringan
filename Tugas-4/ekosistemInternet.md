@@ -21,7 +21,7 @@
 [4. Naming System](#naming-system)
 [5. Domain Name System (DNS)](#domain-name-system-dns)
 [6. Standards Bodies](#standards-bodies)
-[7. Server Providers](#server-providers)
+[7. Service Providers](#service-providers)
 [8. Registries](#registries)
 [9. Other Entities](#other-entities)
 
@@ -172,7 +172,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Nameserver merupakan bagian penting dalam sistem DNS yang menangani pertanyaan-pertanyaan terkait DNS. Jenis-jenisnya meliputi authoritative servers, terdiri dari Primary dan Secondary, serta recursive servers yang dapat berperan sebagai caching forwarders. Fungsi-fungsi ini sering kali saling terintegrasi dalam satu name server.
 </span>
 
 #### e.	Authoritative Nameserver
@@ -183,7 +183,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Nameserver yang diotorisasi untuk memberikan jawaban untuk suatu domain (bisa lebih dari satu). Berdasarkan metode manajemen terbagi menjadi Primary dan Secondary. Primary nameserver menerima semua perubahan pada zona dilakukan, sementara secondary nameserver mengambil file zona dari primary secara berkala.
 </span>
 
 #### f.	Recursive Nameserver
@@ -194,19 +194,23 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Recursive nameserver berfungsi untuk mencari authoritative nameserver dan mendapatkan jawaban, serta berfungsi sebagai caching servers yang memprioritaskan cache lokal untuk mengurangi latensi dan lalu lintas ke link eksternal. Proses ini bersifat iteratif, dimulai dari root.
 </span>
 
 #### g.	Root Servers
 
 <span style="font-size:14px">
+Puncak hierarki DNS terdiri dari 13 server root nama yang dioperasikan di seluruh dunia, yang ditandai dengan:
 
+    [a-m].root-servers.net. 
+
+Ada lebih dari 13 server fisik yang mewakili root name servers, dimana setiap root server memiliki instansi yang dideploy melalui anycast.
 </span>
 
 #### h.	Root Server Deployment at APNIC
 
 <span style="font-size:14px">
-
+Pada tahun 2002, APNIC mendirikan situs-situs server root baru di wilayah AP untuk memperkuat DNS dengan mendeploy sumber daya tambahan yang menangani pertumbuhan lalu lintas internet yang meningkat.
 </span>
 
 #### i.	Resource Records
@@ -217,7 +221,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+File zona DNS adalah file yang memuat informasi mengenai konten suatu situs web. Contohnya, untuk subdomain <em>training.apnic.net</em>, TTL diatur pada 86400 detik, artinya data akan disimpan dalam cache DNS selama periode tersebut sebelum perlu diperbarui. Kelas DNS diatur sebagai IN yang berarti ini adalah kelas DNS internet. Tipe record adalah A, menandakan bahwa data tersebut adalah alamat IPv4. <strong>RDATA (Resource Data)</strong> berisi alamat IP terkait dengan subdomain tersebut, yakni 192.168.1.100.
 </span>
 
 #### j.	Common Resource Record Types
@@ -235,6 +239,11 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
+Zone file merupakan sebuah file teks yang memetakan nama domain ke alamat IP. RR dalam file zona memiliki beberapa bidang yang berbeda.
+
+- SOA (Start of Authority) untuk domain apnic.net. yang mengarah ke server nama utama ns.apnic.net. dan administrator admin.apnic.net.
+- NS (Name Server) yang menunjuk ke server nama ns.apnic.net. dan ns.ripe.net. untuk menyelesaikan nama domain apnic.net.
+- A (Address) yang memetakan nama domain www.apnic.net. ke alamat IP 192.168.0.2.
 
 </span>
 
@@ -246,7 +255,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Administrator zona bertanggung jawab untuk membuat atau memperbarui file zona di server master. Setiap perubahan yang terjadi pada file zona disinkronkan ke server slave. Ketika pengguna memasukkan nama domain ke browser web, resolver mereka mengirimkan permintaan ke server DNS. Server DNS kemudian memeriksa file zonanya untuk menemukan catatan sumber daya yang sesuai dengan nama domain yang diminta. Setelah menemukan RR yang cocok, server DNS mengembalikan alamat IP yang terkait dengan nama domain tersebut ke resolver. Selanjutnya, resolver menggunakan alamat IP untuk terhubung ke server web yang sesuai.
 </span>
 
 #### m.	Delegating a Zone
@@ -257,7 +266,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Delegasi zona dilakukan dengan menambahkan catatan NS untuk menunjukkan nameserver yang bertanggung jawab atas subdomain tertentu. Dalam contoh ini, zona apnic.net mendelegerikan subdomain academy.apnic.net ke dua nameserver, yaitu ns1.academy.apnic.net dan ns2.academy.apnic.net. Untuk mengakses subdomain tersebut, klien harus mengarahkan permintaannya ke salah satu nameserver tersebut. Untuk mencapai nameserver ns1 dan ns2, diperlukan penambahan Glue Record.
 </span>
 
 #### n.	Glue Record
@@ -268,7 +277,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Glue record adalah data non-authoritative yang merupakan sebuah catatan A yang memetakan alamat dari nameserver sub-domain.
 </span>
 
 ---
@@ -282,22 +291,33 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 
 <span style="font-size:14px">
 
+- IETF
+Semua protokol transportasi dan routing layer 3, termasuk IP, TCP, UDP, HTTP, DNS, protokol routing, telnet, rsync, IPsec, dan protokol manajemen jaringan. IETF memiliki beberapa area fokus yang berbeda. Area Umum (gen), Keamanan (sec), Aplikasi dan Real Time (art), Operasi dan Manajemen Internet (ops), Layanan Transportasi (tsv), Routing (rtg), dan Internet (int). Setiap area bertanggung jawab atas aspek tertentu dalam pengembangan standar IETF.<br><br>
+
+- IEEE
+Semua protokol transportasi dan kontrol plane di layer 1 dan layer 2, termasuk Ethernet, spanning tree, dan jaringan nirkabel.<br><br>
+
+- W3C
+Bahasa markup (bahasa yang menjelaskan cara menampilkan atau merender konten), termasuk HTML dan XML.<br><br>
+
+- ITU
+Standar internasional apa pun, termasuk penomoran, skema enkripsi, dan protokol routing (seperti IS-IS).
 </span>
 
 ---
 
-## Server Providers
+## Service Providers
 
 #### a. Content Provider Overview
 
 <span style="font-size:14px">
-
+Penyedia konten terbagi menjadi dua: yang menciptakan dan mendistribusikan media, serta yang menghubungkan pembeli dan penjual dalam e-commerce. Tujuan utama mereka adalah menarik perhatian pengguna, terutama untuk keperluan periklanan.
 </span>
 
 #### b. Access Provider Overview
 
 <span style="font-size:14px">
-
+Memberikan koneksi internet kepada pengguna, bisnis, dan organisasi serta terlibat dalam pembuatan dan distribusi konten.
 </span>
 
 #### c. Transit Provider overview
@@ -308,7 +328,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Menghubungkan penyedia konten dengan penyedia layanan akses untuk memastikan akses yang lancar dan efisien bagi pengguna. Ini memungkinkan konten untuk diakses dengan mudah melalui jaringan yang disediakan oleh penyedia akses. Dengan menjembatani keduanya, pengguna dapat dengan cepat mengakses berbagai layanan dan konten online tanpa hambatan.
 </span>
 
 #### d. Internet Exchange Point Overview
@@ -319,7 +339,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Internet Exchange Points (IXPs) adalah tempat pertukaran data lokal yang memungkinkan penyedia akses dan penyedia konten untuk terhubung secara langsung. IXPs bisa bersifat komersial atau non-profit dan digunakan oleh penyedia layanan dalam suatu wilayah. Dengan menggunakan IXPs, penyedia layanan dapat menghindari penggunaan penyedia transit di luar wilayah, sehingga mengurangi latensi dalam wilayah tersebut. Selain itu, IXPs menggantikan biaya penyelesaian berbasis lalu lintas dengan biaya keanggotaan tetap.
 </span>
 
 ---
@@ -329,7 +349,7 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 #### a. Naming Authorities
 
 <span style="font-size:14px">
-
+ICANN dan IANA mengoordinasikan penugasan angka dan nama yang mendukung fungsi Internet serta menetapkan aturan bagi organisasi lain untuk memperoleh sumber daya tersebut.
 </span>
 
 #### b. Regional Registry Overview
@@ -340,19 +360,19 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 </div><br>
 
 <span style="font-size:14px">
-
+Regional Internet Registries (RIRs) mengelola penugasan blok alamat IP untuk wilayah tertentu, serta terlibat dalam penelitian, standarisasi, dan menyediakan layanan penting seperti whois. IANA memberikan blok alamat IP kepada setiap RIR berdasarkan kebutuhan, yang kemudian diteruskan ke anggotanya untuk penggunaan dalam tabel routing global, entri DNS atau jaringan internal.
 </span>
 
 #### c. Top Level Registries
 
 <span style="font-size:14px">
-
+Domain Name Registries mengelola TLDs atas izin ICANN. Mereka menjual nama domain kepada registri tingkat kedua, termasuk ccTLDs yang merepresentasikan negara atau wilayah geografis.
 </span>
 
 #### d. Second Tier Registries
 
 <span style="font-size:14px">
-
+Domain resellers membeli domain dari registrar TLD dengan harga tetap dan kemudian menjualnya berdasarkan popularitas, bundel dengan layanan lain, dan sebagainya.
 </span>
 
 ---
@@ -362,17 +382,17 @@ Server root sebagai pusat pengelolaan semua domain di internet, di bawahnya terd
 #### a. Clearing House
 
 <span style="font-size:14px">
-
+NOGs dan asosiasi lainnya bertindak sebagai pusat pengelolaan operasional, sedangkan IRRs bertindak sebagai pusat pengelolaan kebijakan dan status jaringan. Para penyedia konten menciptakan konten dan mendistribusikannya melalui jaringan distribusi konten.
 </span>
 
 #### b. Internet Route Registries
 
 <span style="font-size:14px">
-
+Internet Routing Registries (IRRs) adalah basis data yang dikembangkan secara kolaboratif dan sering dijalankan oleh relawan, seperti registrar dan lembaga riset. Beberapa organisasi seperti RIPE, APNIC, ARIN, EasyNet, dan Level3 menyediakan salinan IRR. Data disimpan dalam format standar yang disebut Routing Policy Specification Language (RPSL), yang digunakan oleh penyedia layanan untuk membangun filter rute dan menentukan kebijakan jaringan.
 </span>
 
 #### c. Network Operators Groups
 
 <span style="font-size:14px">
-
+Network Operator's Groups (NOGs) adalah pusat informasi untuk operasi jaringan. Biasanya, mereka adalah organisasi relawan yang bekerja dengan registrar regional, lembaga riset, vendor, dan organisasi regional lainnya.
 </span>

@@ -13,8 +13,6 @@
   <hr>
 </div>
 
----
-
 <span style="font-size:14px">
 Berikut adalah langkah-lang untuk instalasi DNS sever menggunakan BIND9 pada Debian 12:
 </span>

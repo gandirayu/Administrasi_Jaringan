@@ -8,7 +8,9 @@
   <h3 align="center">Workshop Administrasi Jaringan</h3>
 
   <p align="center">
-    <strong>Ade Hafis Rabbani</strong>
+    <strong>Gandi Rukmaning Ayu</strong>
+    <br />
+    <strong>3122500016</strong>
     <br />
     <br />
     <p>3122500001 · D3 IT A</p>
@@ -35,8 +37,7 @@ Repository untuk menyimpan project dan tugas di mata kuliah workshop administras
 
 
 ## Laporan
--  <a href="Tugas_1">Laporan SysAdmin 1</a>
--  <a href="Tugas_2">Laporan SysAdmin 2</a>
--  <a href="Tugas_3">Laporan SysAdmin 3</a>
--  <a href="Tugas_4">Laporan SysAdmin 4</a>
--  <a href="Tugas_5">Laporan SysAdmin 5</a>
+-  <a href="Tugas-2">Laporan SysAdmin 2</a>
+-  <a href="Tugas-3">Laporan SysAdmin 3</a>
+-  <a href="Tugas-4">Laporan SysAdmin 4</a>
+-  <a href="Tugas-5">Laporan SysAdmin 5</a>

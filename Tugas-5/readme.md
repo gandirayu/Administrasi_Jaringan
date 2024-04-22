@@ -20,6 +20,6 @@
 | 3     | [Konfigurasi Database Server](databaseServer.md) |
 | 4     | [Konfigurasi Phpmyadmin](phpMyAdmin.md) |
 | 5     | [Konfigurasi Mail Server](mailServer.md) |
-| 6     | [Konfigurasi Roundcube](roundCube.md) |
+| 6     | [Konfigurasi Thunderbird](thunderBird.md) |
 
 ---

@@ -13,13 +13,14 @@
   <hr>
 </div>
 
-| Nomor | File                                 |
-|-------|--------------------------------------|
-| 1     | [konfigurasi NTP Server](networkTime.md) |
-| 2     | [Konfigurasi Web Server](webServer.md) |
+| Nomor | File                                             |
+| ----- | ------------------------------------------------ |
+| 1     | [konfigurasi NTP Server](networkTime.md)         |
+| 2     | [Konfigurasi Web Server](webServer.md)           |
 | 3     | [Konfigurasi Database Server](databaseServer.md) |
-| 4     | [Konfigurasi Phpmyadmin](phpMyAdmin.md) |
-| 5     | [Konfigurasi Mail Server](mailServer.md) |
-| 6     | [Konfigurasi Thunderbird](thunderBird.md) |
+| 4     | [Konfigurasi Phpmyadmin](phpMyAdmin.md)          |
+| 5     | [Konfigurasi Mail Server](mailServer.md)         |
+| 6     | [Konfigurasi Roundcube](roundCube.md)            |
+| 6     | [Electronic Mail (Minggu 10)](electronicMail.md) |
 
 ---

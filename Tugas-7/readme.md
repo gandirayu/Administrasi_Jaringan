@@ -16,11 +16,11 @@
 | Nomor | File                                  |
 | ----- | ------------------------------------- |
 | 1     | [Getting Started](./Part-1/readme.md) |
-| 2     | [Chapter 2](./Part-2/readme.md)       |
-| 3     | [Chapter 3](./Part-3/readme.md)       |
-| 4     | [Chapter 4](./Part-4/readme.md)       |
-| 5     | [Chapter 5](./Part-5/readme.md)       |
-| 6     | [Chapter 6](./Part-6/readme.md)       |
-| 7     | [Chapter 7](./Part-7/readme.md)       |
+| 2     | [Updating Our Source Code](./Part-2/readme.md)       |
+| 3     | [Sharing Our Apps](./Part-3/readme.md)       |
+| 4     | [Presisting Our Database](./Part-4/readme.md)       |
+| 5     | [Using Bind Mounts](./Part-5/readme.md)       |
+| 6     | [Multi Container Apps](./Part-6/readme.md)       |
+| 7     | [Using Docker Compose](./Part-7/readme.md)       |
 
 ---

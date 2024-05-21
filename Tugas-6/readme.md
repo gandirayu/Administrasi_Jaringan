@@ -17,5 +17,7 @@
 | Nomor | File                                                              |
 | ----- | ----------------------------------------------------------------- |
 | 1     | [Arsitektur Web Browser Dan Web Server](arsitektur.md) |
+| 2     | [Containerized Web Server Using Docker](docker.md) |
+| 3     | [Docker Uptime Kuma Package](kuma.md) |
 
 ---

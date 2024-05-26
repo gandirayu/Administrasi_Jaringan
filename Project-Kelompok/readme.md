@@ -97,7 +97,7 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 ## Desain Sistem
 
-<div style="text-align: center;">
+<div align="center">
   <img src="./img/1.png" alt="" width="35%" />
 </div>
 

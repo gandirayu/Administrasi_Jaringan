@@ -1,12 +1,12 @@
 <div align="center">
-  <h2 style="text-align: center;font-weight: bold">Project Charter Container Based App<br>
-Mobile Apps e-TOEFL</h2>
-  <h5 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h5>
+  <h1 style="text-align: center;font-weight: bold">Project Charter Container Based App<br>
+Mobile Apps e-TOEFL</h1>
+  <h3 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h3>
 </div>
 <br />
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
-  <h4 style="text-align: center;">Disusun Oleh : <br>Kelompok 3 dan 5</h4>
+  <h3 style="text-align: center;">Disusun Oleh : <br>Kelompok 3 dan 5</h3>
   <div style="align: center;">
     <table>
       <tr>
@@ -67,7 +67,7 @@ Mobile Apps e-TOEFL</h2>
     </table>
   </div>
 
-<h4 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h4>
+<h2 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h2>
   <hr>
 </div>
 

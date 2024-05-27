@@ -129,23 +129,6 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 **Link Backlog:** https://docs.google.com/spreadsheets/d/1H3uiufmB5BPQeNi5vA3qUKwm-h5uV2LpxK4VTh3sPIg/edit?usp=sharing
 
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>BACKLOG</th><th>TODO</th><th>EKSEKUTOR</th></tr></thead><tbody>
  <tr><td>Mobile Homepage</td><td>Slicing Card Target Score</td><td>Arsyita Devanaya Arianto</td></tr>

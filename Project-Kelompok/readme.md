@@ -73,7 +73,6 @@ Mobile Apps e-TOEFL</h1>
   </div>
 
 <h2 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h2>
-  <hr>
 </div>
 
 ## Daftar Isi

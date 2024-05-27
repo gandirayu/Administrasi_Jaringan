@@ -61,6 +61,11 @@ Mobile Apps e-TOEFL</h1>
       </tr>
       <tr>
         <td>10</td>
+        <td>Adira Callysta</td>
+        <td>3122500025</td>
+      </tr>
+      <tr>
+        <td>11</td>
         <td>Shofira Izza N</td>
         <td>3122500026</td>
       </tr>
@@ -130,7 +135,8 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 6. Adam Rasyid Nurmuhammd (3122500018)
 7. Adinda Zahra Q (3122500020)
 8. M Reza Muktasib (3122500024)
-9. Shofira Izza N (3122500026)
+9. Adira Callysta (3122500025)
+10. Shofira Izza N (3122500026)
 
 - **BackEnd Mobile**
 

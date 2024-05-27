@@ -159,34 +159,9 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 ## Tahapan Pelaksaan
 
-1. **Perancanaan dan Analisis**
-   - **Menentukan Tujuan dan Sasaran:**
-     - **Meningkatkan persiapan tes e-TOEFL bagi mahasiswa PENS:** Aplikasi e-TOEFL dirancang untuk membantu mahasiswa PENS mencapai nilai tes e-TOEFL yang optimal. Hal ini penting karena tes e-TOEFL merupakan salah satu prasyarat kelulusan di PENS.
-     - **Memberikan pengalaman belajar yang dipersonalisasi:** Pengguna dapat memilih topik latihan yang sesuai dengan minat dan kebutuhan mereka. Hal ini dapat membantu mereka fokus pada area yang perlu diperbaiki. Selain itu, pengguna dapat melihat skor simulasi tes dan latihan mereka. Hal ini dapat membantu mereka melihat bagaimana mereka berkembang dan tetap termotivasi.
-     - **Membuat tes e-TOEFL lebih mudah diakses:** Aplikasi ini tersedia di perangkat seluler, sehingga pengguna dapat belajar dan berlatih kapanpun dan dimanapun mereka mau.
-   - **Mengidentifikasi gamifikasi:**
-   - **Membuat Rencana Database:** Membuat garis besar proses pengembangan, termasuk garis waktu, pencapaian, dan pembagian tugas.
-   - **Pemilihan Tumpukan Teknologi:** Memilih teknologi yang sesuai untuk pengembangan front-end (aplikasi seluler) dan back-end (sisi server), berbagai faktor perlu dipertimbangkan, seperti bahasa pemrograman, framework, database, dan alat containerization.
-2. **Desain dan Prototype**
-   - **Desain Antarmuka Pengguna (UI):** Membuat wireframe dan mockup untuk memvisualisasikan tata letak, navigasi, dan elemen visual aplikasi.
-   - **Desain Pengalaman Pengguna (UX):** Merancang aliran pengguna, memastikan navigasi yang mudah, interaksi yang jelas, dan pengalaman keseluruhan yang tepat.
-   - **Pengembangan Konten:** Mencari pertanyaan latihan TOEFL berkualitas tinggi, terpercaya, dan selaras dengan format dan standar TOEFL terbaru.
-3. **Pengembangan dan Implementasi**
-   - **Pengembangan Front-end:**
-     - **Flutter:** Bahasa pemrograman Flutter dipilih untuk membangun aplikasi mobile yang handal dan berkinerja tinggi.
-   - **Pengembangan Back-end:**
-     - **MongoDB:** MongoDB dipilih sebagai database untuk menyimpan data pengguna dan aplikasi dengan aman dan efisien. Struktur data NoSQL MongoDB yang fleksibel dan skalabel ideal untuk menangani data pengguna yang terus bertambah dan kebutuhan aplikasi yang berkembang.
-     - **Laravel:** Web server Laravel digunakan untuk menangani permintaan API dan menyediakan fungsionalitas back-end. Laravel menawarkan framework PHP yang kokoh dan aman untuk membangun API yang handal dan mudah diintegrasikan dengan aplikasi mobile.
-     - **Storage Server:** Storage server yang sesuai digunakan untuk menyimpan file dan data lainnya.
-   - **Containerization : **
-     - **Docker Engine:** Docker Engine diimplementasikan untuk memastikan aplikasi dapat dijalankan dengan mudah dan konsisten di berbagai lingkungan. Docker memungkinkan kontainerisasi layanan back-end, seperti web server Laravel, storage server, dan database MongoDB, sehingga aplikasi dapat dijalankan secara independen dan terisolasi.
-     - **Komunikasi Antar Layanan:** Docker Engine bertindak sebagai perantara yang mengelola komunikasi antara aplikasi mobile dan berbagai layanan back-end. Docker Engine menerima permintaan dari aplikasi mobile dan meneruskannya ke layanan back-end yang sesuai, seperti web server Laravel, storage server, atau database MongoDB. Hal ini memastikan komunikasi yang efisien dan aman antar komponen aplikasi.
-4. **Deployment dan Pemeliharaan**
-   - **Deployment Aplikasi Mobile:** Membangun dan menguji aplikasi mobile Flutter, mempublikasikannya ke platform distribusi, dan memantau performa serta umpan balik pengguna
-   - **Deployment Storage Server:** Mengkonfigurasi dan mengelola storage server untuk menyimpan data pengguna dan aplikasi dengan aman, memastikan skalabilitas dan ketersediaan, serta melakukan backup dan pemulihan data secara berkala.
-   - **Deployment Web Server Laravel:** Web server Laravel merupakan komponen back-end dari aplikasi e-TOEFL. Proses deployment-nya meliputi beberapa langkah penting. Pertama, membangun image Docker yang berisi aplikasi Laravel dan semua dependensinya. Selanjutnya, menyiapkan file konfigurasi Docker Compose untuk mengkonfigurasi layanan, termasuk database dan web server. Setelah itu, menjalankan container Docker menggunakan Docker Compose untuk memulai layanan Laravel. Kemudian, memverifikasi aksesibilitas web server melalui browser atau alat lain untuk memastikan semuanya berjalan dengan benar. Terakhir, memastikan integrasi dengan storage server dan database untuk menyimpan dan mengambil data yang diperlukan. Langkah-langkah ini penting untuk memastikan web server e-TOEFL berfungsi dengan baik, terhubung dengan database dan storage server, serta mampu memberikan layanan pembelajaran yang handal.
-   - **Deployment Docker Engine Container:** Proses deployment container Docker Engine untuk layanan back-end meliputi beberapa langkah penting. Pertama, membangun dan menguji image Docker yang berisi aplikasi back-end dan semua dependensinya. Setelah itu, menyebarkan image Docker ke Docker Engine dengan mengunggah image ke registry Docker, kemudian menarik dan menjalankan image tersebut pada Docker Engine di storage server. Terakhir, mengelola dan memperbaiki image Docker dan kontainer dengan memonitor container yang berjalan, melakukan update image Docker sesuai kebutuhan, dan me-restart container untuk memastikan aplikasi selalu berjalan dengan lancar.
-
+<div align="center">
+  <img src="./img/tahapan-pelaksanaan.jpg" alt="" width="100%" />
+</div>
 
 ## Implementasi
 

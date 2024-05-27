@@ -206,6 +206,10 @@ Menjalankan aplikasi e-TOEFL sesuai rencana yang telah disusun, memastikan setia
    - Docker digunakan untuk membuat lingkungan pengujian yang konsisten untuk semua peserta uji coba, memastikan bahwa setiap pengguna mengalami aplikasi dalam kondisi yang sama.
    - Umpan balik dari uji pengguna digunakan untuk melakukan penyesuaian dan perbaikan, yang kemudian diuji ulang dalam container Docker untuk memastikan kualitas dan kinerja.
 
+## Fungsional Testing API
+![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/fc55696b-4114-44d9-9235-4627101fe8d7)
+
+
 ## Kesimpulan
 
 Melalui tahapan pelaksanaan ini, diharapkan aplikasi e-TOEFL dapat membantu mahasiswa PENS dalam mempersiapkan diri menghadapi tes e-TOEFL dengan lebih baik, memberikan pengalaman belajar yang dipersonalisasi, serta membuat tes e-TOEFL lebih mudah diakses. Implementasi teknologi yang tepat serta pengujian yang komprehensif akan memastikan aplikasi berjalan dengan baik dan memenuhi kebutuhan pengguna.

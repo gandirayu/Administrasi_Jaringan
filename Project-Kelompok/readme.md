@@ -127,6 +127,8 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 ## Tim dan Tugas
 
+**Link Backlog:** https://docs.google.com/spreadsheets/d/1H3uiufmB5BPQeNi5vA3qUKwm-h5uV2LpxK4VTh3sPIg/edit?usp=sharing
+
 <table>
     <tr>
       <th>No</th>

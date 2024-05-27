@@ -440,28 +440,28 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 **Tahap 1: Perencanaan & Analisis (Minggu 1-2)**
 
-Tujuan & Sasaran: Output dari tahap ini adalah dokumen yang berisi tujuan dan sasaran implementasi E-TOEFL. Dokumen ini harus jelas, terukur, dapat dicapai, relevan, dan berjangka waktu (SMART).
-Mengidentifikasi Target Pengguna: Output dari tahap ini adalah profil target pengguna E-TOEFL. Profil ini harus mencakup informasi demografis, kebutuhan, dan ekspektasi pengguna.
-Gamifikasi: Output dari tahap ini adalah desain gamifikasi yang akan diterapkan pada E-TOEFL. Desain ini harus menarik dan memotivasi pengguna untuk menyelesaikan tes.
+Tujuan & Sasaran: Output dari tahap ini adalah dokumen yang berisi tujuan dan sasaran implementasi E-TOEFL. Dokumen ini harus jelas, terukur, dapat dicapai, relevan, dan berjangka waktu (SMART). <br>
+Mengidentifikasi Target Pengguna: Output dari tahap ini adalah profil target pengguna E-TOEFL. Profil ini harus mencakup informasi demografis, kebutuhan, dan ekspektasi pengguna. <br>
+Gamifikasi: Output dari tahap ini adalah desain gamifikasi yang akan diterapkan pada E-TOEFL. Desain ini harus menarik dan memotivasi pengguna untuk menyelesaikan tes. <br>
+Rancangan Database: Output dari tahap ini adalah rancangan database yang akan digunakan untuk menyimpan data pengguna, hasil tes, dan informasi lainnya. <br>
+Pemilihan Teknologi: Output dari tahap ini adalah pilihan teknologi yang akan digunakan untuk mengembangkan E-TOEFL. Pilihan teknologi ini harus mempertimbangkan faktor-faktor seperti skalabilitas, keamanan, dan kemudahan penggunaan.
 
 **Tahap 2: Desain & Prototyping (Minggu 3-4)**
 
-Rancangan Database: Output dari tahap ini adalah rancangan database yang akan digunakan untuk menyimpan data pengguna, hasil tes, dan informasi lainnya.
-Pemilihan Teknologi: Output dari tahap ini adalah pilihan teknologi yang akan digunakan untuk mengembangkan E-TOEFL. Pilihan teknologi ini harus mempertimbangkan faktor-faktor seperti skalabilitas, keamanan, dan kemudahan penggunaan.
-Desain UI/UX: Output dari tahap ini adalah desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) E-TOEFL. Desain ini harus intuitif, mudah digunakan, dan estetis.
+Desain UI/UX: Output dari tahap ini adalah desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) E-TOEFL. Desain ini harus intuitif, mudah digunakan, dan estetis. <br>
+Pengembangan Konten: Output dari tahap ini adalah konten tes E-TOEFL. Konten ini harus sesuai dengan standar internasional dan relevan dengan kebutuhan target pengguna.
 
 **Tahap 3: Pengembangan & Implementasi (Minggu 5-6)**
 
-Pengembangan Konten: Output dari tahap ini adalah konten tes E-TOEFL. Konten ini harus sesuai dengan standar internasional dan relevan dengan kebutuhan target pengguna.
-Pengembangan FE Mobile: Output dari tahap ini adalah aplikasi mobile E-TOEFL. Aplikasi ini harus memungkinkan pengguna untuk mengikuti tes dari perangkat mobile mereka.
-Pengembangan BE: Output dari tahap ini adalah backend E-TOEFL. Backend ini harus bertanggung jawab untuk memproses data pengguna, hasil tes, dan informasi lainnya.
+Pengembangan FE Mobile: Output dari tahap ini adalah aplikasi mobile E-TOEFL. Aplikasi ini harus memungkinkan pengguna untuk mengikuti tes dari perangkat mobile mereka. <br>
+Pengembangan BE: Output dari tahap ini adalah backend E-TOEFL. Backend ini harus bertanggung jawab untuk memproses data pengguna, hasil tes, dan informasi lainnya. <br>
 Containerization Docker: Output dari tahap ini adalah container Docker untuk E-TOEFL. Container ini akan memungkinkan E-TOEFL untuk dijalankan dengan mudah di berbagai lingkungan.
-Testing Installation: Output dari tahap ini adalah instalasi E-TOEFL di lingkungan produksi. Instalasi ini harus memastikan bahwa E-TOEFL berjalan dengan lancar dan aman.
-Functional Testing: Output dari tahap ini adalah pengujian fungsional E-TOEFL. Pengujian ini harus memastikan bahwa semua fitur E-TOEFL berfungsi dengan benar.
 
 **Tahap 4: Testing & Deployment (Minggu 7-8)**
 
-Uji Coba: Output dari tahap ini adalah hasil uji coba E-TOEFL dengan pengguna nyata. Uji coba ini harus mengidentifikasi masalah dan bug yang masih ada.
+Testing Installation: Output dari tahap ini adalah instalasi E-TOEFL di lingkungan produksi. Instalasi ini harus memastikan bahwa E-TOEFL berjalan dengan lancar dan aman. <br>
+Functional Testing: Output dari tahap ini adalah pengujian fungsional E-TOEFL. Pengujian ini harus memastikan bahwa semua fitur E-TOEFL berfungsi dengan benar. <br>
+Uji Coba: Output dari tahap ini adalah hasil uji coba E-TOEFL dengan pengguna nyata. Uji coba ini harus mengidentifikasi masalah dan bug yang masih ada. <br>
 Peluncuran: Output dari tahap ini adalah peluncuran E-TOEFL ke publik. Peluncuran ini harus dilakukan dengan strategi yang tepat untuk memastikan kelancaran dan kesuksesan.
 
 ## Sistem testing

@@ -164,9 +164,8 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
      - **Meningkatkan persiapan tes e-TOEFL bagi mahasiswa PENS:** Aplikasi e-TOEFL dirancang untuk membantu mahasiswa PENS mencapai nilai tes e-TOEFL yang optimal. Hal ini penting karena tes e-TOEFL merupakan salah satu prasyarat kelulusan di PENS.
      - **Memberikan pengalaman belajar yang dipersonalisasi:** Pengguna dapat memilih topik latihan yang sesuai dengan minat dan kebutuhan mereka. Hal ini dapat membantu mereka fokus pada area yang perlu diperbaiki. Selain itu, pengguna dapat melihat skor simulasi tes dan latihan mereka. Hal ini dapat membantu mereka melihat bagaimana mereka berkembang dan tetap termotivasi.
      - **Membuat tes e-TOEFL lebih mudah diakses:** Aplikasi ini tersedia di perangkat seluler, sehingga pengguna dapat belajar dan berlatih kapanpun dan dimanapun mereka mau.
-   - **Mengidentifikasi Target Pengguna:** Memahami kebutuhan, preferensi, dan poin-poin yang membuat frustasi pengguna target.
-   - **Melakukan Riset Pasar:** Menganalisis aplikasi persiapan TOEFL yang ada, mengidentifikasi kekuatan dan kelemahannya, dan menemukan celah pasar yang potensial. Ini akan membantu membedakan aplikasi e-TOEFL dengan aplikasi lain dan memenuhi kebutuhan pengguna yang belum terpenuhi.
-   - **Membuat Rencana Proyek:** Membuat garis besar proses pengembangan, termasuk garis waktu, pencapaian, dan pembagian tugas.
+   - **Mengidentifikasi gamifikasi:**
+   - **Membuat Rencana Database:** Membuat garis besar proses pengembangan, termasuk garis waktu, pencapaian, dan pembagian tugas.
    - **Pemilihan Tumpukan Teknologi:** Memilih teknologi yang sesuai untuk pengembangan front-end (aplikasi seluler) dan back-end (sisi server), berbagai faktor perlu dipertimbangkan, seperti bahasa pemrograman, framework, database, dan alat containerization.
 2. **Desain dan Prototype**
    - **Desain Antarmuka Pengguna (UI):** Membuat wireframe dan mockup untuk memvisualisasikan tata letak, navigasi, dan elemen visual aplikasi.

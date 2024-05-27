@@ -466,19 +466,7 @@ Peluncuran: Output dari tahap ini adalah peluncuran E-TOEFL ke publik. Peluncura
 
 ## Sistem testing
 
-1. **Pengujian unit**
-   - Setiap komponen aplikasi, baik front-end maupun back-end, diuji secara individual untuk memastikan setiap unit fungsionalitas berfungsi dengan benar.
-   - Pengujian ini mencakup pengujian kode dalam container Docker untuk memastikan bahwa semua dependensi dan konfigurasi telah diatur dengan benar.
-2. **Pengujian integrasi**
-   - Memastikan bahwa berbagai layanan back-end berinteraksi dengan benar satu sama lain dan dengan front-end.
-3. **Pengujian sistem**
-   - Menguji keseluruhan aplikasi sebagai satu kesatuan untuk memastikan semua bagian bekerja bersama dengan baik.
-4. **Uji pengguna**
-   - Uji coba pengguna dilakukan untuk mendapatkan umpan balik dari pengguna nyata dan memastikan aplikasi memenuhi kebutuhan mereka.
-   - Docker digunakan untuk membuat lingkungan pengujian yang konsisten untuk semua peserta uji coba, memastikan bahwa setiap pengguna mengalami aplikasi dalam kondisi yang sama.
-   - Umpan balik dari uji pengguna digunakan untuk melakukan penyesuaian dan perbaikan, yang kemudian diuji ulang dalam container Docker untuk memastikan kualitas dan kinerja.
-
-## Fungsional Testing API
+### Fungsional Testing API
 ![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/e64aad55-9f83-44ba-b8d0-a06f0e5efd36)
 
 ## Kesimpulan

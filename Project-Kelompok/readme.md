@@ -89,6 +89,15 @@ Mobile Apps e-TOEFL</h1>
 
 <hr>
 
+## Abstrak
+
+E-TOEFL adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu mahasiswa PENS dalam mempersiapkan tes e-TOEFL. Aplikasi ini menawarkan pengalaman belajar yang dipersonalisasi, memungkinkan pengguna memilih topik latihan dan memantau skor simulasi. Backend aplikasi menggunakan Laravel untuk autentikasi dan berinteraksi dengan MongoDB NoSQL yang menyimpan data dan melakukan operasi CRUD. Docker Engine digunakan untuk mengembangkan, mengirimkan, dan menjalankan aplikasi dalam kontainer, memastikan portabilitas, isolasi, dan kemudahan deployment. Desain sistem meliputi Storage Server pada port 3000 untuk penyimpanan file, Web Server Laravel pada port 80 untuk logika bisnis dan komunikasi dengan Storage Server dan MongoDB, serta MongoDB pada port 27017 untuk penyimpanan data aplikasi. Docker Engine menghubungkan antarmuka pengguna mobile dengan layanan backend. Tahapan pelaksanaan mencakup perencanaan dan analisis, desain dan prototyping, pengembangan dan implementasi, serta deployment dan pemeliharaan. Pada sistem testing terdapat pengujian unit, integrasi, sistem, dan uji pengguna. Docker memastikan konsistensi lingkungan pengujian. Aplikasi e-TOEFL diharapkan meningkatkan aksesibilitas dan efektivitas persiapan tes e-TOEFL bagi mahasiswa dengan sistem backend yang handal dan terkontainerisasi.
+*Keywords:* *e-toefl, container, docker*
+
+## Tahap Pelaksanaan
+
+Proyek berlangsung selama 6 minggu, mulai dari tanggal 25 April 2024 hingga 30 Mei 2024. Dimana tahapan pelaksanaannya mencakup perencanaan dan analisis hingga pengujian.
+
 ## Pendahuluan
 
 Docker adalah platform perangkat lunak yang memudahkan pembuatan, pengujian, dan penerapan aplikasi dengan cepat. Docker mengemas perangkat lunak ke dalam kontainer yang berisi semua kebutuhan perangkat lunak agar bisa berfungsi, seperti pustaka, alat sistem, kode, dan runtime. Dengan Docker, kita dapat dengan mudah menerapkan dan menskalakan aplikasi di berbagai lingkungan. Docker memiliki beberapa manfaat yaitu, portabilitas aplikasi yang dapat dijalankan di lingkungan apapun tanpa perlu mengubah konfigurasi, isolasi yang memastikan setiap kontainer berjalan terpisah dan aman dari aplikasi lain, kemudahan deployment dan skalabilitas aplikasi untuk menambah atau mengurangi instance kontainer dengan mudah.
@@ -117,45 +126,314 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 ## Tim dan Tugas
 
-- **UI/UX**
-
-1. Ali Azhar (3122500011)
-2. Mayada Azizah (3122500015)
-3. Gandi Rukmaning Ayu (3122500016)
-4. Adinda Zahra Q (3122500020)
-
-- **FrontEnd Mobile**
-
-1. Arsyita Devanaya Arianto (312250000)
-2. Ali Azhar (3122500011)
-3. Mahendra Khibrah R. S (3122500013)
-4. Mayada Azizah (3122500015)
-5. Gandi Rukmaning Ayu (3122500016)
-6. Adam Rasyid Nurmuhammd (3122500018)
-7. Adinda Zahra Q (3122500020)
-8. M Reza Muktasib (3122500024)
-9. Adira Callysta (3122500025)
-10. Shofira Izza N (3122500026)
-
-- **BackEnd Mobile**
-
-1. Gede Hari Yoga Nanda (3122500005)
-2. Mahendra Khibrah R. S (3122500013)
-3. M Reza Muktasib (3122500024)
-
-- **Consume API**
-
-1. Arsyita Devanaya Arianto (312250000)
-2. Mahendra Khibrah R. S (3122500013)
-3. Mayada Azizah (3122500015)
-4. Adam Rasyid Nurmuhammd (3122500018)
-5. Adinda Zahra Q (3122500020)
-6. M Reza Muktasib (3122500024)
-7. Shofira Izza N (3122500026)
-
-- **Database**
-
-1. Gede Hari Yoga Nanda (3122500005)
+<table>
+    <tr>
+      <th>No</th>
+      <th>Bakclog</th>
+      <th>ToDo</th>
+      <th>Eksekutor</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mobile HomePage</td>
+      <td>Slicing Card Target Score</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Api Target Score</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Chart Pie Lingkaran</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Rank User</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Card Navigasi Rank</td>
+      <td>Ali Azhar P.B</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume For You List</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing For You Card</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Simulation Card</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Learning Path Category Quiz</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Learning Path Card</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Card Set Target/td>
+      <td>Gandi Rukmaning Ayu, Adinda Zahra Q, Mayada Azizah</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Chart Pie Lingkaran</td>
+      <td>Gandi Rukmaning Ayu</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design For You Card</td>
+      <td>Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Learning Path Card</td>
+      <td>Gandi Rukmaning Ayu, Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Simulation Card</td>
+      <td>Adinda Zahra Q, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Bottom Nav Bar</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mobile Bookmark</td>
+      <td>Slicing Card Bookmark</td>
+      <td>Adam Rasyid Nurmuhammad</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Bookmark List</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Card Bookmark</td>
+      <td>Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mobile Profile</td>
+      <td>Design Profile Page</td>
+      <td>Gandi Rukmaning Ayu</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Profile User</td>
+      <td>Shofira Izza N</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Profile Page</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Target Score</td>
+      <td>Slicing Target Score List</td>
+      <td>Adam Rasyid Nurmuhammad</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Target Score List</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Target Score Page</td>
+      <td>Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Simulation Test List Page</td>
+      <td>Slicing Test List Page</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume List Test Page</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Simulation Test Page</td>
+      <td>Slicing Bottom Nav Bar</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design Bottom Nav Bar</td>
+      <td>Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing List Soal Bottom Sheet</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Design List Soal Bottom Sheet</td>
+      <td>Mayada Azizah, Adinda Zahra Q</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Implementasi Logic Test Question</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Test Question Option dan Key</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Implementasi Logic Test Session</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Membuat State Management Test</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Test Result</td>
+      <td>Adam Rasyid Nurmuhammad</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Logic Test Result</td>
+      <td>Mahendra Khibrah R. S</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Leaderboard</td>
+      <td>Design Leaderboard</td>
+      <td>Gandi Rukmaning Ayu, Mayada Azizah</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Leaderboard</td>
+      <td>Gandi Rukmaning Ayu</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Leaderboard</td>
+      <td>Arsyita Devanaya Arianto</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Quiz List Page</td>
+      <td>Design Quiz List Page</td>
+      <td>Gandi Rukmaning Ayu</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Quiz List Page</td>
+      <td>Arsyita Devanaya Arianto, M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Consume Quiz List Page</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Quiz Page</td>
+      <td>Consume Quiz Question</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Logic Take Quiz</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Logic Result</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Game Page</td>
+      <td>Desain Layout Game Path </td>
+      <td>Gandi Rukmaning Ayu</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Slicing Layout Game Path</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>M Reza Muktasib</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Create Logic Path Background</td>
+      <td>M Reza Muktasib</td>
+    </tr>
+  </table>
 
 ## Tahapan Pelaksaan
 

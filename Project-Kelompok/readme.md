@@ -182,8 +182,7 @@ Menjalankan aplikasi e-TOEFL sesuai rencana yang telah disusun, memastikan setia
    - Umpan balik dari uji pengguna digunakan untuk melakukan penyesuaian dan perbaikan, yang kemudian diuji ulang dalam container Docker untuk memastikan kualitas dan kinerja.
 
 ## Fungsional Testing API
-![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/fc55696b-4114-44d9-9235-4627101fe8d7)
-
+![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/e64aad55-9f83-44ba-b8d0-a06f0e5efd36)
 
 ## Kesimpulan
 

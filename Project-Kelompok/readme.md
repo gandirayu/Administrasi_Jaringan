@@ -424,12 +424,6 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
     <tr>
       <td></td>
       <td></td>
-      <td></td>
-      <td>M Reza Muktasib</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
       <td>Create Logic Path Background</td>
       <td>M Reza Muktasib</td>
     </tr>

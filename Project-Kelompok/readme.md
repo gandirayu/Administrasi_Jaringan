@@ -288,7 +288,9 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 ## Sistem testing
 
 ### Fungsional Testing API
-![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/e64aad55-9f83-44ba-b8d0-a06f0e5efd36)
+![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/bd1b4ac9-deaf-4d75-83a4-65a3753d5ba9)
+
+link documentation API -> https://docs.google.com/spreadsheets/d/1-Jroqy-IDRazHRMXz3AzIXzvIScPwYVNrdnf1L9PnkQ/edit?usp=sharing
 
 ## Kesimpulan
 

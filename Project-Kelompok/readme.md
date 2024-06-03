@@ -294,13 +294,35 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 link documentation API -> https://docs.google.com/spreadsheets/d/1-Jroqy-IDRazHRMXz3AzIXzvIScPwYVNrdnf1L9PnkQ/edit?usp=sharing
 
 **2. Docker**
+**Deskripsi Singkat**
+
+**Docker**
+
 - Service
-  1. storage: https://storage.ciptakode.biz.id/toefl/<namafile>
-  2. user_service: https://user.ciptakode.biz.id (auth api, otp, profile)
-  3. simulation_service: https://simulation.ciptakode.biz.id (target, simulasi)
-  4. game_service: https://game.ciptakode.biz.id (homepage game, game, quiz)
-  5. web_service: https://ciptakode.biz.id (admin panel)
-  6. database_service: mongodb private
+
+1. **storage**
+   - URL: [https://storage.ciptakode.biz.id/toefl/](https://storage.ciptakode.biz.id/toefl/)
+   - Fungsi: Menyediakan layanan penyimpanan file, termasuk materi TOEFL.
+
+2. **user_service**
+   - URL: [https://user.ciptakode.biz.id](https://user.ciptakode.biz.id)
+   - Fungsi: Menangani autentikasi, OTP, dan profil pengguna.
+
+3. **simulation_service**
+   - URL: [https://simulation.ciptakode.biz.id](https://simulation.ciptakode.biz.id)
+   - Fungsi: Mengelola target dan simulasi.
+
+4. **game_service**
+   - URL: [https://game.ciptakode.biz.id](https://game.ciptakode.biz.id)
+   - Fungsi: Menyediakan homepage untuk game, permainan, dan kuis.
+
+5. **web_service**
+   - URL: [https://ciptakode.biz.id](https://ciptakode.biz.id)
+   - Fungsi: Menyediakan panel admin.
+
+6. **database_service**
+   - Teknologi: MongoDB private
+   - Fungsi: Menyimpan data secara terpusat menggunakan database MongoDB.
 
 - Up testing
   <div align="center">

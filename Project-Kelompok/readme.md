@@ -287,10 +287,33 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 
 ## Sistem testing
 
-### Fungsional Testing API
+### Fungsional Testing 
+**1. API**
 ![image](https://github.com/gandirayu/Administrasi_Jaringan/assets/123063394/bd1b4ac9-deaf-4d75-83a4-65a3753d5ba9)
 
 link documentation API -> https://docs.google.com/spreadsheets/d/1-Jroqy-IDRazHRMXz3AzIXzvIScPwYVNrdnf1L9PnkQ/edit?usp=sharing
+
+**2. Docker**
+- Service
+  storage: storage.ciptakode.biz.id/toefl/<namafile>
+  user_service: user.ciptakode.biz.id
+                auth api, otp, profile
+  simulation_service: simulation.ciptakode.biz.id
+                      target, simulasi
+  game_service: game.ciptakode.biz.id
+                homepage game, game, quiz
+  web_service: ciptakode.biz.id
+               admin panel
+  database_service: mongodb private
+
+- Restart Test
+  <div align="center">
+    <img src="./img/2.jpg" alt="" width="100%" />
+  </div>
+- Docker
+  <div align="center">
+    <img src="./img/3.png" alt="" width="100%" />
+  </div>
 
 ## Kesimpulan
 

@@ -295,24 +295,28 @@ link documentation API -> https://docs.google.com/spreadsheets/d/1-Jroqy-IDRazHR
 
 **2. Docker**
 - Service
-  1. storage: storage.ciptakode.biz.id/toefl/<namafile>
-  2. user_service: user.ciptakode.biz.id
-                auth api, otp, profile
-  3. simulation_service: simulation.ciptakode.biz.id
-                      target, simulasi
-  4. game_service: game.ciptakode.biz.id
-                homepage game, game, quiz
-  5. web_service: ciptakode.biz.id
-               admin panel
+  1. storage: https://storage.ciptakode.biz.id/toefl/<namafile>
+  2. user_service: https://user.ciptakode.biz.id (auth api, otp, profile)
+  3. simulation_service: https://simulation.ciptakode.biz.id (target, simulasi)
+  4. game_service: https://game.ciptakode.biz.id (homepage game, game, quiz)
+  5. web_service: https://ciptakode.biz.id (admin panel)
   6. database_service: mongodb private
 
+- Up testing
+  <div align="center">
+    <img src="./img/5.png" alt="" width="100%" />
+  </div>
+- Run Testing
+  <div align="center">
+    <img src="./img/3.png" alt="" width="100%" />
+  </div>
 - Restart Test
   <div align="center">
     <img src="./img/2.jpg" alt="" width="100%" />
   </div>
-- Bukti Docker Container Sudah Berjalan
+- Down Testing
   <div align="center">
-    <img src="./img/3.png" alt="" width="100%" />
+    <img src="./img/4.png" alt="" width="100%" />
   </div>
 
 ## Kesimpulan

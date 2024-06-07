@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold">Project Charter Container Based App<br>
+  <h1 style="text-align: center;font-weight: bold">Project Charter Container Based App<br> 
 Mobile Apps e-TOEFL</h1>
   <h3 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h3>
 </div>
@@ -112,7 +112,7 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 ## Desain Sistem
 
 <div align="center">
-  <img src="./img/1.png" alt="" width="80%" />
+  <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/1.png" alt="" width="80%" />
 </div>
 
 1. **Storage Server** berjalan pada port 3000 yang bertanggung jawab untuk menyimpan dan mengambil data, khususnya file atau dokumen besar yang diperlukan oleh aplikasi.
@@ -254,7 +254,7 @@ eTOEFL adalah aplikasi berbasis mobile yang dikembangkan dengan Flutter dan memu
 ## Tahapan Pelaksaan
 
 <div align="center">
-  <img src="./img/tahapan-pelaksanaan.jpg" alt="" width="100%" />
+  <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/tahapan-pelaksanaan.jpg" alt="" width="100%" />
 </div>
 
 ## Implementasi
@@ -539,7 +539,7 @@ MongoDB
 3. Supaya memudahkan development saya membuat beberapa subdomain dengan domain utama https://ciptakode.biz.id
 disini saya beri SSL dari cloudflare menggunakan origin server
 
-![alt text](./img/image.png)
+![alt text](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/image.png)
 
 4. kemudian setting untuk nginxnya
 
@@ -787,19 +787,19 @@ server {
 
 - Up testing
   <div align="center">
-    <img src="./img/5.png" alt="" width="100%" />
+    <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/5.png" alt="" width="100%" />
   </div>
 - Run Testing
   <div align="center">
-    <img src="./img/3.png" alt="" width="100%" />
+    <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/3.png" alt="" width="100%" />
   </div>
 - Restart Test
   <div align="center">
-    <img src="./img/2.jpg" alt="" width="100%" />
+    <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/2.jpg" alt="" width="100%" />
   </div>
 - Down Testing
   <div align="center">
-    <img src="./img/4.png" alt="" width="100%" />
+    <img src="https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_KELOMPOK_UAS/img/4.png" alt="" width="100%" />
   </div>
 
 ## Kesimpulan
